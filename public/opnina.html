@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opina</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/opina.css">
+</head>
+
+<body>
+    <h1>Opina</h1>
+    <div class="wrapper">
+        <h2 class="titulo_formulario">Añadir una opinion</h2>
+        <label>
+            <p>Fecha</p>
+            <input id="fecha" class="inputfield" type="text" name="fecha">
+        </label>
+        <label>
+            <p>Nick</p>
+            <input id="nick" class="inputfield" type="text" name="nick">
+        </label>
+        <label>
+            <p>Objeto</p>
+            <input id="objeto" class="inputfield" type="text" name="objeto">
+        </label>
+        <legend>Voto</legend>
+        <label>
+            <input id="voto" type="radio" name="voto" value="1">1 
+        </label>
+        <label>
+            <input id="voto" type="radio" name="voto" value="2">2 
+        </label>
+        <label>
+            <input id="voto" type="radio" name="voto" value="3">3 
+        </label>
+        <label>
+            <input id="voto" type="radio" name="voto" value="4">4 
+        </label>
+        <label>
+            <input id="voto" type="radio" name="voto" value="5">5 
+        </label>
+        <label>
+            <p>Comentario</p>
+            <textarea id="comentario" name="comentario"></textarea>
+        </label>
+        <button onclick="guardaOpinion()">Guardar Opinion</button>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<script src="javascripts/opina.js"></script>
+
+</html>

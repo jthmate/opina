@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opina</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/opina.css">
+</head>
+
+<body ng-controller="OpinionController">
+    <h1>Opina</h1>
+    <div class="wrapper">
+        <div class="opinion-item" ng-repeat="opinion in opiniones | orderBy:'fecha'">
+            <div class="info_opinion">El {{opinion.fecha}} {{opinion.nick}} ha opinado acerca de {{opinion.objeto}}</div>
+            <div class="voto">Voto: {{opinion.voto}}</div>
+            <span class="comentario">{{opinion.comentario}}</span>
+        </div>
+    </div>
+    <br>
+    <center><button ng-click="ShowForm()" ng-hide="formVisibility">Añadir Opinion</button></center>
+    <div ng-show="formVisibility" class="wrapper">
+        <h2 class="titulo_formulario">Añadir una opinion</h2>
+
+        <label>
+            <p>Fecha</p>
+            <input class="inputfield" type="text" ng-model="nuevaOpinion.fecha">
+        </label>
+        <label>
+            <p>Nick</p>
+            <input class="inputfield" type="text" ng-model="nuevaOpinion.nick">
+        </label>
+        <label>
+            <p>Objeto</p>
+            <input class="inputfield" type="text" ng-model="nuevaOpinion.objeto">
+        </label>
+        <legend>Voto</legend>
+        <label>
+            <input type="radio" name="voto" ng-model="nuevaOpinion.voto" value="1">1 
+        </label>
+        <label>
+            <input type="radio" name="voto" ng-model="nuevaOpinion.voto" value="2">2 
+        </label>
+        <label>
+            <input type="radio" name="voto" ng-model="nuevaOpinion.voto" value="3">3 
+        </label>
+        <label>
+            <input type="radio" name="voto" ng-model="nuevaOpinion.voto" value="4">4 
+        </label>
+        <label>
+            <input type="radio" name="voto" ng-model="nuevaOpinion.voto" value="5">5 
+        </label>
+        <label>
+            <p>Comentario</p>
+            <textarea ng-model="nuevaOpinion.comentario"></textarea>
+        </label>
+        <button ng-click="Save()">Guardar Opinion</button>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
+<script src="javascripts/opina_ANGULAR.js"></script>
+
+</html>

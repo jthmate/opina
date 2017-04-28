@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    font-weight: 100;
+    background: #ccc;
+    padding-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #666;
+    text-shadow: 0px 2px 0px #fff;
+}
+
+.wrapper {
+    width: 650px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px #555;
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.opinion-item {
+    border-bottom: thin solid #ccc;
+    padding: 10px;
+}
+
+.info_opinion {
+    font-style: italic;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.voto {
+    font-style: bold;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.comentario {
+    font-size: 13px;
+}
+
+.titulo_formulario {
+    text-align: center;
+}
+
+.inputfield {
+    height: 35px;
+    width: 645px;
+    border-radius: 5px;
+    border: thin solid #ccc;
+}
+
+textarea {
+    height: 150px;
+    width: 645px;
+    border-radius: 5px;
+    border: thin solid #ccc;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+legend {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    height: 35px;
+    display: block;
+    background: #080;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: thin solid #060;
+    margin: 5px auto;
+}
+
+button:hover {
+    background-color: #0a0;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opina</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/opina.css">
+</head>
+
+<body>
+    <h1><%= locals.titulo %> <%= locals.error.status %>: <%= locals.message %></h1>
+    <h2><%= locals.subtitulo %></h2>
+    <br>
+    <pre><%= locals.error.stack %></pre>
+</body>
+</html>
