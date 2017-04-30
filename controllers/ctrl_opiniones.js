@@ -8,8 +8,10 @@ var db = require("../config/db_development");
 //--------------------------------------------------------------------------------------
 
 var guardaOpinion = function (req, res) {
+	
+	res.send(JSON.stringify({ msg: "EL SERVER RESPONDE: OK! He recibido los datos" }));
 
-	db.query('INSERT INTO opiniones SET ?', {
+	/*db.query('INSERT INTO opiniones SET ?', {
 
 		// Datos grupo:
 		op_fecha: req.query.fecha,
@@ -22,7 +24,7 @@ var guardaOpinion = function (req, res) {
 		if (err) throw err;
         
 		res.send(JSON.stringify({ msg: "EL SERVER RESPONDE: OK! He recibido los datos" }));
-	});
+	});*/
     
 };
 
