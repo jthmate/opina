@@ -1,2 +1,2 @@
-# opina
+# Opina
 Proyecto Opina.
